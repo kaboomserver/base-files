@@ -15,7 +15,7 @@
             "plugins/FastAsyncWorldEdit.jar": {
                 "type": "zip",
                 "url": "https://ci.athion.net/job/FastAsyncWorldEdit/lastSuccessfulBuild/artifact/*zip*/archive.zip",
-                "extract": "archive/artifacts/FastAsyncWorldEdit-Bukkit-*.jar"
+                "extract": "archive/artifacts/FastAsyncWorldEdit-Paper-*.jar"
             },
             "plugins/Geyser.jar": {
                 "type": "zip",

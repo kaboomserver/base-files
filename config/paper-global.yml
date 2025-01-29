@@ -132,7 +132,7 @@ spam-limiter:
   tab-spam-limit: 500
 spark:
   enable-immediately: false
-  enabled: true
+  enabled: false
 unsupported-settings:
   allow-headless-pistons: true
   allow-permanent-block-break-exploits: true

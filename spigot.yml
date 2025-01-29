@@ -46,6 +46,8 @@ settings:
   debug: false
   log-villager-deaths: false
   attribute:
+    maxAbsorption:
+      max: 2048.0
     maxHealth:
       max: 2048.0
     movementSpeed:
@@ -63,6 +65,7 @@ advancements:
   - '*'
 world-settings:
   default:
+    unload-frozen-chunks: false
     seed-trialchambers: 94251327
     below-zero-generation-in-existing-chunks: true
     simulation-distance: default
@@ -181,5 +184,5 @@ world-settings:
       entity: 20
     squid-spawn-range:
       min: 45.0
-  faweregentempworld:
+  worldeditregentempworld:
     verbose: false

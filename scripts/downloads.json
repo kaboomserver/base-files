@@ -1,8 +1,9 @@
 {
     "server.jar": {
-        "type": "zip",
-        "url": "https://ci.plex.us.org/job/Scissors/job/1.20.4/lastSuccessfulBuild/artifact/*zip*/archive.zip",
-        "extract": "archive/build/libs/scissors-*.jar"
+        "type": "bibliothek",
+        "endpoint": "https://api.papermc.io",
+        "project": "paper",
+        "version": "1.21.4"
     },
     "plugins": {
         "external": {

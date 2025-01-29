@@ -39,7 +39,7 @@ settings:
   netty-threads: 4
   sample-count: 12
   player-shuffle: 0
-  user-cache-size: 1000
+  user-cache-size: 0
   save-user-cache-on-stop-only: true
   moved-wrongly-threshold: 0.0625
   moved-too-quickly-multiplier: 100.0

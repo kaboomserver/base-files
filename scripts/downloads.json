@@ -1,9 +1,8 @@
 {
     "server.jar": {
-        "type": "bibliothek",
-        "endpoint": "https://api.papermc.io",
-        "project": "paper",
-        "version": "1.21.4"
+        "type": "zip",
+        "url": "https://nightly.link/amyavi/kaboom-fork-test/workflows/build/master/Fork.zip",
+        "extract": "fork-paperclip-*-mojmap.jar"
     },
     "plugins": {
         "external": {

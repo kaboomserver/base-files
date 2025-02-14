@@ -1,10 +1,7 @@
-/fetched_*/
-/scripts/fetched_*/
-
-# Server files
 cache/
 /libraries/
 /logs/
+/plugins/.paper-remapped/
 /plugins/Essentials/userdata
 /plugins/Essentials/warps/*
 /plugins/Essentials/custom_items.yml
@@ -15,6 +12,8 @@ cache/
 /plugins/Essentials/worth.yml
 /plugins/FastAsyncWorldEdit/lang/
 /plugins/Geyser-Spigot/locales/
+/plugins/spark/tmp-client/
+/.console_history
 /versions/
 /worlds/
 /banned-ips.json

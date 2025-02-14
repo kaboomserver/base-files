@@ -1,9 +1,9 @@
 # These first 6 aren't configurable
 issues: "https://github.com/IntellectualSites/FastAsyncWorldEdit/issues"
 wiki: "https://intellectualsites.github.io/fastasyncworldedit-documentation/"
-date: "Sun Feb 23 00:00:00 GMT-03:00 2025"
-build: "https://ci.athion.net/job/FastAsyncWorldEdit/1026"
-commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/f3add7a0"
+date: "Thu Feb 27 00:00:00 GMT-03:00 2025"
+build: "https://ci.athion.net/job/FastAsyncWorldEdit/1030"
+commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/f55e76a9"
 platform: "Bukkit"
 # Set true to enable WorldEdit restrictions per region (e.g. PlotSquared or WorldGuard).
 # To be allowed to WorldEdit in a region, users need the appropriate
@@ -13,6 +13,9 @@ region-restrictions: false
 #  - Bypass with `/wea` or `//fast` or `fawe.bypass`
 #  - Disable with 100 or -1.
 max-memory-percent: 60
+# When percent memory usage reaches this threshold some aspects of editing will be slowed down:
+#  - FAWE-Asynchronous chunk loading when writing changes (see queue.async-chunk-load-write)
+slower-memory-percent: 80
 
 # Enable or disable core components
 enabled-components:
@@ -189,6 +192,17 @@ queue:
   # If pooling is enabled (reduces GC, higher memory usage)
   #  - Enable to improve performance at the expense of memory
   pool: true
+  # If chunk loading for writing edits to the world should be performed asynchronously to FAWE
+  #  - Enable to improve performance at the expense of memory
+  #  - If experience out of memory crashed, disable this or reduce slower-memory-percent
+  async-chunk-load-write: true
+  # Percentage of queue.target-size to use per thread in multi-threaded operations
+  #  - Minimum of 100 / queue.parallel-threads (queue.target-size split across threads)
+  #  - Maximum of 100 (queue.target-size per thread)
+  #  - Higher performance at the expense of memory
+  #  - I.e. target-size=400, parallel-threads=8 and threads-target-size=25 means target-size of 100 per thread
+  #  - Defaults to 100 * 2 / parallel-threads
+  thread-target-size-percent: 100
 
 history:
   # Should history be saved on disk:

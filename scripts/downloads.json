@@ -1,8 +1,8 @@
 {
     "server.jar": {
         "type": "zip",
-        "url": "https://ci.plex.us.org/job/Scissors/job/1.20.4/lastSuccessfulBuild/artifact/*zip*/archive.zip",
-        "extract": "archive/build/libs/scissors-*.jar"
+        "url": "https://nightly.link/amyavi/kaboom-fork-test/workflows/build/master/Fork.zip",
+        "extract": "fork-paperclip-*-mojmap.jar"
     },
     "plugins": {
         "external": {
@@ -14,7 +14,7 @@
             "plugins/FastAsyncWorldEdit.jar": {
                 "type": "zip",
                 "url": "https://ci.athion.net/job/FastAsyncWorldEdit/lastSuccessfulBuild/artifact/*zip*/archive.zip",
-                "extract": "archive/artifacts/FastAsyncWorldEdit-Bukkit-*.jar"
+                "extract": "archive/artifacts/FastAsyncWorldEdit-Paper-*.jar"
             },
             "plugins/Geyser.jar": {
                 "type": "zip",

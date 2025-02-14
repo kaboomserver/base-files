@@ -1,6 +1,7 @@
 #!/bin/sh
 # shellcheck disable=SC1091
 
+. "$_SCRIPT_PATH"/_sources/_bibliothek.sh
 . "$_SCRIPT_PATH"/_sources/_url.sh
 . "$_SCRIPT_PATH"/_sources/_zip.sh
 
@@ -59,9 +60,10 @@ download_type() {
     # Since the args are part of the function's stdin, they will be
     # be propagated into the _download_type_... functions.
     case "$1" in
-        "url")  _download_type_url "$2";;
-        "zip")  _download_type_zip "$2";;
-        *)      echo Invalid download type "$1"
-                return 1;;
+        "bibliothek")   _download_type_bibliothek "$2";;
+        "url")          _download_type_url "$2";;
+        "zip")          _download_type_zip "$2";;
+        *) echo Invalid download type "$1"
+           return 1;;
     esac
 }

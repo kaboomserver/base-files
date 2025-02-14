@@ -145,6 +145,10 @@ aliases:
   - tp $1-
   tpall:
   - tp $1-
+  transfer:
+  - []
+  minecraft:transfer:
+  - []
   w:
   - minecraft:w $1-
   weather:

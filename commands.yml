@@ -137,14 +137,6 @@ aliases:
   - minecraft:time $1-
   tp:
   - minecraft:tp $1-
-  essentials:etpall:
-  - tp $1-
-  essentials:tpall:
-  - tp $1-
-  etpall:
-  - tp $1-
-  tpall:
-  - tp $1-
   w:
   - minecraft:w $1-
   weather:
